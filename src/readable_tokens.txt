@@ -1,0 +1,118 @@
+1	int: num;
+	(INT,^)
+	(':',^)
+	(ID,num)
+	(';',^)
+2	char: my_char;
+	(CHAR,^)
+	(':',^)
+	(ID,my_char)
+	(';',^)
+3	// lets assign variable my_char a value
+	(S_COMMENT,// lets assign variable my_char a value)
+4	my_char = 'd';
+	(ID,my_char)
+	('=',^)
+	(LIT,'d')
+	(';',^)
+5	print("my char contains: ");
+	(PRINT,^)
+	('(',^)
+	(STR,"my char contains: ")
+	(')',^)
+	(';',^)
+6	println(my_char);
+	(PRINTLN,^)
+	('(',^)
+	(ID,my_char)
+	(')',^)
+	(';',^)
+7	/*
+8	The program here onwards is an iterative algorithm
+9	for fibonacci numbers
+10	*/
+	(M_COMMENT,/*The program here onwards is an iterative algorithm for fibonacci numbers */)
+11	println("enter a number");
+	(PRINTLN,^)
+	('(',^)
+	(STR,"enter a number")
+	(')',^)
+	(';',^)
+12	input -> num;
+	(INPUT,^)
+	(INPUT_OP,^)
+	(ID,num)
+	(';',^)
+13	int: a = 0, b=1, c=0;
+	(INT,^)
+	(':',^)
+	(ID,a)
+	('=',^)
+	(NUM,0)
+	(',',^)
+	(ID,b)
+	('=',^)
+	(NUM,1)
+	(',',^)
+	(ID,c)
+	('=',^)
+	(NUM,0)
+	(';',^)
+14	println("The fibonacci seq is: ");
+	(PRINTLN,^)
+	('(',^)
+	(STR,"The fibonacci seq is: ")
+	(')',^)
+	(';',^)
+15	println(a);
+	(PRINTLN,^)
+	('(',^)
+	(ID,a)
+	(')',^)
+	(';',^)
+16	println(b);
+	(PRINTLN,^)
+	('(',^)
+	(ID,b)
+	(')',^)
+	(';',^)
+17	while c <= num:
+	(WHILE,^)
+	(ID,c)
+	(REL_OP,LE)
+	(ID,num)
+	(':',^)
+18	{
+	('{',^)
+19	int: temp = a+b;
+	(INT,^)
+	(':',^)
+	(ID,temp)
+	('=',^)
+	(ID,a)
+	('+',^)
+	(ID,b)
+	(';',^)
+20	a = b;
+	(ID,a)
+	('=',^)
+	(ID,b)
+	(';',^)
+21	b = temp;
+	(ID,b)
+	('=',^)
+	(ID,temp)
+	(';',^)
+22	println(temp);
+	(PRINTLN,^)
+	('(',^)
+	(ID,temp)
+	(')',^)
+	(';',^)
+23	c++;
+	(ID,c)
+	('+',^)
+	('+',^)
+	(';',^)
+24	}
+	('}',^)

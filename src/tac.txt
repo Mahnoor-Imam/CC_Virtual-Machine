@@ -1,0 +1,45 @@
+1	int num
+2	char my_char
+3	t1 = 'd'
+4	my_char = t1
+5	t2 = "my char contains: "
+6	out t2
+7	out my_char
+8	t3 = "\n"
+9	out t3
+10	t4 = "enter a number"
+11	out t4
+12	t5 = "\n"
+13	out t5
+14	in num
+15	int a
+16	a = 0
+17	int b
+18	b = 1
+19	int c
+20	c = 0
+21	t6 = "The fibonacci seq is: "
+22	out t6
+23	t7 = "\n"
+24	out t7
+25	out a
+26	t8 = "\n"
+27	out t8
+28	out b
+29	t9 = "\n"
+30	out t9
+31	if (c LE num) goto 33
+32	goto 46
+33	t10 = a + b
+34	int temp
+35	temp = t10
+36	t11 = b
+37	a = t11
+38	t12 = temp
+39	b = t12
+40	out temp
+41	t13 = "\n"
+42	out t13
+43	t14 = c + 1
+44	c = t14
+45	goto 31

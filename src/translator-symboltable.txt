@@ -1,0 +1,24 @@
+num	INT	0
+my_char	CHAR	4
+t1	CHAR	5	'd'
+t2	STR	6	"my char contains: "
+t3	STR	24	"\n"
+t4	STR	26	"enter a number"
+t5	STR	40	"\n"
+a	INT	42	0
+b	INT	46	1
+c	INT	50	0
+t6	STR	54	"The fibonacci seq is: "
+t7	STR	76	"\n"
+t8	STR	78	"\n"
+t9	STR	80	"\n"
+t10	INT	82
+temp	INT	86	t10
+t11	INT	90	b
+t12	INT	94	temp
+t13	STR	98	"\n"
+t14	INT	100
+t15	INT	104	0
+t16	INT	108	1
+t17	INT	112	0
+t18	INT	116	1
